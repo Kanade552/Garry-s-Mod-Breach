@@ -1,0 +1,65 @@
+
+ENDINGS = {
+    
+}
+
+TEAM_SCP = 2
+TEAM_GUARD = 3
+TEAM_CLASSD = 4
+TEAM_SCI = 5
+TEAM_CHAOS = 6
+TEAM_STAFF = 7
+
+MINPLAYERS = 2
+
+ROLES = {}
+
+-- SCPS
+ROLES.ROLE_SCP173 = "SCP-173"
+ROLES.ROLE_SCP106 = "SCP-106"
+ROLES.ROLE_SCP049 = "SCP-049"
+ROLES.ROLE_SCP457 = "SCP-457"
+ROLES.ROLE_SCP966 = "SCP-966"
+ROLES.ROLE_SCP0492 = "SCP-049-2"
+ROLES.ROLE_SCP0082 = "SCP-008-2"
+
+-- Research Staff
+ROLES.ROLE_RES = "Researcher"
+ROLES.ROLE_RES_SPY = "CI Spy"
+ROLES.ROLE_HRES = "Head Researcher"
+
+-- Misc Staff
+ROLES.ROLE_JANITOR = "Janitor"
+ROLES.ROLE_ENG = "Engineer"
+ROLES.ROLE_MEDIC = "Medic"
+
+-- Class D Personnel
+ROLES.ROLE_CLASSD = "Class D Personnel"
+ROLES.ROLE_VETERAN = "Class D Veteran"
+
+-- Security
+ROLES.ROLE_SEC_GUARD = "Security Guard"
+ROLES.ROLE_SEC_OFFICER = "Security Officer"
+ROLES.ROLE_SEC_MEDIC = "Security Medic"
+ROLES.ROLE_SEC_CHIEF = "Security Chief"
+ROLES.ROLE_SD = "Site Director"
+
+-- Support
+ROLES.ROLE_CHAOS = "CI Soldier"
+ROLES.ROLE_MTF_OFFICER = "MTF Officer"
+ROLES.ROLE_MTF_MEDIC = "MTF Medic"
+ROLES.ROLE_MTF_SCU = "MTF SCU"
+ROLES.ROLE_MTF_SNIPER = "MTF Sniper"
+ROLES.ROLE_CHAOSCOM = "CI Commander"
+ROLES.ROLE_MTF_LIE = "MTF Lieutenant"
+ROLES.ROLE_MTF_COM = "MTF Commander"
+
+-- CI Spies
+ROLES.ROLE_CI_RES = "CI Spy Researcher"
+ROLES.ROLE_CI_GUARD = "CI Spy Guard"
+ROLES.ROLE_CI_SOLD = "CI Spy Soldier"
+
+-- Other
+ROLES.ROLE_SPEC = "Spectator"
+
+print("Gamemode loaded core/shared/enums.lua")
