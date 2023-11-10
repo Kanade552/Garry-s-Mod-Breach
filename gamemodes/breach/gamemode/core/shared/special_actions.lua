@@ -1,6 +1,8 @@
 
 SPECIAL_ACTIONS = {
+    /*
     {
+        group = "sa_mtf_other",
         text = "Request Gate A Open",
         concommand = "br_sa_mtf_request_gatea_open",
         cl_action = function()
@@ -12,13 +14,14 @@ SPECIAL_ACTIONS = {
         condition = function(ply) return ply:CLevelGlobal() >= 4 and (ply:GTeam() == TEAM_GUARD or ply:GTeam() == TEAM_CHAOS) end
     },
     {
+        group = "sa_mtf_other",
         text = "Close Gate B",
         concommand = "br_sa_mtf_request_gateb_close",
         cl_action = function() end,
         sv_action = function(ply) end,
-        condition = function(ply) return ply:CLevelGlobal() >= 4 end
+        condition = function(ply) return ply:CLevelGlobal() >= 4 and (ply:GTeam() == TEAM_GUARD or ply:GTeam() == TEAM_CHAOS) end
     },
-    
+    */
     {
         group = "sa_mtf_other",
         text = "Request Escorting",

@@ -83,12 +83,12 @@ local function cs16_buymenu_keybinds(ply, bind, pressed)
 			remove_sa_menu()
 		else
 			sa_menu_items = {}
-			for k,v in pairs(SPECIAL_ACTIONS) do
-				if v.condition(LocalPlayer()) then
-					if sa_menu_items[v.group] == nil then
-						sa_menu_items[v.group] = {}
+			for k, sa in pairs(SPECIAL_ACTIONS) do
+				if sa.condition(LocalPlayer()) then
+					if sa_menu_items[sa.group] == nil then
+						sa_menu_items[sa.group] = {}
 					end
-					table.ForceInsert(sa_menu_items[v.group], v)
+					table.ForceInsert(sa_menu_items[sa.group], sa)
 				end
 			end
 			sa_menu_n_items = table.Count(sa_menu_items)

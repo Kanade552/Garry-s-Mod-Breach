@@ -47,7 +47,7 @@ function meta_player:ApplyRoleStats(role)
 	self:SetHealth(role.health)
 	self:SetMaxHealth(role.health)
 
-	self:ApplyNewSpeeds(100 * role.walkspeed, 210 * role.runspeed, 190 * role.jumppower)
+	self:ApplyNewSpeeds(100 * role.walkspeed, 210 * role.runspeed, 180 * role.jumppower)
 	
 	if istable(role.models) then
 		self:SetModel(TableRandom(role.models))

@@ -69,6 +69,7 @@ end
 function BR_PrintRoundTeamStrengthsRaport()
     local team_tab, player_count, team_power_list = BR_RoundTeamStrengthsRaport()
     local team_tab_count = 0
+    
     for k,v in pairs(team_tab) do
         team_tab_count = team_tab_count + v
     end

@@ -1,4 +1,18 @@
 
+/*
+function MAP_OpenGateA(ply)
+	local rdc = ents.FindByName("door_lever_roomccont")[1]
+	if IsValid(rdc) and rdc:GetKeyValues()["sequence"] == 2 then
+		ply:PrintMessage(HUD_PRINTTALK, "Request to open the Gate A has been sent but it seems that the Remote Door Control system is disabled.")
+		return false
+	end
+
+	local gatea = ents.FindByName("gate_a_enter")[1]
+	gatea:Use(ply, ply, USE_ON, 1)
+	return true
+end
+*/
+
 function Check914Button()
 	local pos_tab = {
 		{

@@ -49,13 +49,16 @@ function WinCheck()
 	local dominant_force, dominant_force_class = BR_DominantPower(team_tab, player_count, team_power_list)
 	local time_left = BR_RoundTimePercLeft()
 
-	Entity(1):PrintMessage(HUD_PRINTCENTER, tostring(dominant_force) .. " - " .. tostring((1 - time_left) / 2.5))
+	--Entity(1):PrintMessage(HUD_PRINTCENTER, tostring(dominant_force) .. " - " .. tostring((1 - time_left) / 2.5))
+
+	--Entity(1):PrintMessage(HUD_PRINTCENTER, tostring(dominant_force) .. " - " .. tostring( 0.98 - ((1 - time_left) / 2.5) ))
 
 	if player_count == 0 then
 		-- no one won
 		end_round("no one won", "end_noonewon")
 
-	elseif (time_left < 0.6 and (ntfs_spawned or time_left <= 0) and dominant_force > 0.98 - ((1 - time_left) / 2.5)) or ((ntfs_spawned or time_left <= 0) and dominant_force == 1) then
+	elseif (time_left < 0.6 and (ntfs_spawned or time_left <= 0) and dominant_force > 0.95 - ((1 - time_left) / 2.5))
+	or ((ntfs_spawned or time_left <= 0) and dominant_force > 0.95) then
 		-- dominant force won
 		end_round("dominant force", "end_"..string.lower(dominant_force_class))
 		print("end_"..string.lower(dominant_force_class))

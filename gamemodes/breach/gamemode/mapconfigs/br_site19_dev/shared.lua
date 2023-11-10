@@ -789,6 +789,7 @@ BUTTONS = {
 		usesounds = true,
 		clevel = 3
 	},
+	-- OUTSIDE
 	{
 		name = "Outside_A-Tower",
 		pos = "gatea_door_button_tower0",
